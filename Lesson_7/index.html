@@ -9,73 +9,104 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <nav class="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+  <div class="container">
+    <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
       </ul>
     </nav>
-    <div class="line"></div>
-  </header>
-
+    </header>
+  </div>
   <main>
     <section id="home">
-      <h1 class="name">Denis Novik</h1>
-      <div class="img"><img src="images/img_1.png" alt=""></div>
+      <div class="container">
+      <h1 class="heading">Denis Novik</h1>
+      <img class="main-image" src="images/img_1.png" alt="main-photo">
+      </div>
     </section>
-    <section id="about">
-      <h3>About me</h3>
-     <div class="text">
-      <p>
-        Hi, I'm Denis – UX/UI designer from Minsk.</br>
-        I'm interested in design and everything connected with it.</br></br></br>
-        I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</br></br></br>
-        Ready to implement excellent projects with wonderful people.
-      </p>
+    <section id="about" class="background">
+      <div class="container">
+        <div class="content">
+      <h3 class="title">About me</h3>
+      <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+      <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+      <p>Ready to implement excellent projects with wonderful people.</p>
+    </div>
     </div>
     </section>
-    <section id="skills">
-      <div class="skills">
-      <h3>Skills</h3>
-      <p>I work in such programs as</p>
+
+    <section id="skills" class="background-white">
+      <div class="container">
+      <h3 class="title text-align">Skills</h3>
+      <p class="text-align">I work in such programs as</p>
+      <div class="pictures">
+      <img class="icons" src="images/img_2.png">
+      <p>Adobe Photoshop</p>
+      <img src="images/Star.svg" alt="">
+      <img src="images/Star.svg" alt="">
+      <img src="images/Star.svg" alt="">
+      <img src="images/Star.svg" alt="">
+      <img src="images/star-silver.svg" alt="">
       </div>
-      <div class="adobe">
-      <img src="images/img_2.png">
-      <img src="images/img_3.png">
-      <img src="images/img_4.png">
-      <img src="images/img_12.svg" alt="">
+      <div class="pictures">
+        <img class="icons" src="images/img_3.png">
+        <p>Adobe Illustrator</p>
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/star-silver.svg" alt="">
+        <img src="images/star-silver.svg" alt="">
       </div>
-      <!-- <ul class="adobe-text">
-        <li>Adobe</br>Photoshop</li>
-        <li>Adobe</br>Illustrator</li>
-        <li>Adobe</br> After Effects</li>
-        <li>Figma</li>
-      </ul> -->
+      <div class="pictures">
+        <img class="icons" src="images/img_4.png">
+        <p>Adobe After Effects</p>
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/star-silver.svg" alt="">
+      </div>
+      <div class="pictures">
+        <img class="icons" src="images/img_12.svg" alt="">
+        <p>Figma</p>
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/Star.svg" alt="">
+        <img src="images/star-silver.svg" alt="">
+      </div>
     </section>
-    <section id="portfolio">
-      <h3>Portfolio</h3>
-      <img class="example" src="images/img_5.png">
-      <p class="example-text">Online fashion store - Homepage</p>
-      <img class="sec-example" src="images/img_6.png">
-      <p class="sec-example-text">Reebok Store - Concept</p>
-      <img class="thrd-example" src="images/img_7.png">
-      <p class="third-example-text">Braun Landing Page - Concept</p>
+
+
+    <section id="portfolio" class="background">
+      <div class="container">
+      <h3 class="title text-align">Portfolio</h3>
+      <img class="block-img" src="images/img_5.png">
+      <p class="block">Online fashion store - Homepage</p>
+      <img class="block-img" src="images/img_6.png">
+      <p class="block">Reebok Store - Concept</p>
+      <img class="block-img" class="thrd-example" src="images/img_7.png">
+      <p class="block">Braun Landing Page - Concept</p>
+      </div>
     </section>
   </main>
-  <footer id="contacts"> 
-    <h3>Contacts</h3>
-    <p class="foot-text">Want to know more or just chat</br> You are welcome!</p>
-    <button>Send message</button>
-    <div class="footer">
-    <img src="images/img_8.svg" alt="">
-    <img src="images/img_9.svg">
-    <img src="images/img_10.svg" alt="">
-    <img src="images/img_11.svg" alt="">
-    <p>Like me on <br> LinkedIn, Instagram, Behance,<br> Dribble</p>
+  <footer id="contacts" class="background-white">
+    <div class="container">
+    <h3 class="title text-align">Contacts</h3>
+    <p class="content">Want to know more or just chat</br> You are welcome!</p>
+    <button class="button">Send message</button>
+  <div class="footer">
+    <img class="footer-img" src="images/img_8.svg" alt="">
+    <img class="footer-img" src="images/img_9.svg">
+    <img class="footer-img" src="images/img_10.svg" alt="">
+    <img class="footer-img" src="images/img_11.svg" alt="">
+  </div>
+    <p class="footer-txt">Like me on <br> LinkedIn, Instagram, Behance,<br> Dribble</p>
   </div>
   </footer>
 </body>
