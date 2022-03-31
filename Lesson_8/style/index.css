@@ -29,35 +29,68 @@ body {
   line-height: 21px;
   padding: 10px 0 13px 0;
   color: #FFFFFF;
+  background-color: #88839E;
 }
-.paragraph {
+.text-item {
   display: inline;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 13px;
+}
+.text:nth-child(odd) {
+  background-color: #7A7593;
 }
 .section {
   max-width: 534px;
   margin-left: auto; 
   margin-right: auto;
   background-color: #88839E;
-  
 }
 .checklist {
   list-style: none;
   padding: 0;
-}
+} 
 .check {
   display: inline;
   margin: 12px 12px;
   width: 19px;
   height: 19px;
 }
+.check:checked + .text-item {
+  text-decoration: line-through;
+}
 .text:hover {
   background-color:#4A4F56;
   border: #FFFFFF;
   border-width: 3px 0;
   border-style: solid;
+}
+.text-item-one::after {
+  content: ' (for the next lessons about CSS)';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.text-item-two::after {
+  content: ' (for more CSS manipulations)';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.text-item-three::after {
+  content: ' (because they are awesome)';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.text-item-four::after {
+  content: ' (hm... they always dissapear)';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.text-item-five::after {
+  content: ' (for my friends)';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
 }
 .footer {
   background-color: #4A4F56;
