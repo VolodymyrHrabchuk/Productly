@@ -134,6 +134,7 @@ main {
 .form-photo {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .upload {
