@@ -36,12 +36,14 @@
       <div class="checkbox-field">
         <label class="form-label btn" for="male">
           <input class="radio" type="radio" name="gender" id="male">
+          <span class="checkmark"></span>
           Male
         </label>
       </div>
       <div class="checkbox-field">
         <label class="form-label btn" for="female">
           <input class="radio" type="radio" name="gender" id="female">
+          <span class="checkmark"></span>
           Female
         </label>
       </div>
@@ -62,11 +64,11 @@
       </div>
     </div>
       <div class="button">
-        <button type="signup" class="sign-btn">Sign Up</button>
+        <input type="submit" value="Sign Up" class="sign-btn">
       </div>
       <p class="text center">By clicking the 'Sign Up' button, you confirm that you accept our
        <a href="" class="link">Terms of Use</a> and <a href=""class="link">Privacy Policy</a>.</p>
-       <p class="login-text center">Have an account? <a href="" class="link">Log In</a></p>
+       <p class="login-text center">Have an account? <input type="submit" value="Log In" class="link"></p>
       </form>
     </div>
     <div class="container">
@@ -77,8 +79,8 @@
             <img src="/Lesson_13/img/Image.svg" alt="" class="avatar">
             </div>
             <div class="form-btn">
-            <button type="upload" class="upload" name="upload" id="upload">Upload photo <i class="fa-solid fa-camera"></i></button>
-            <button type="delete" class="delete"><i class="fa-solid fa-trash"></i></button>
+            <input type="file" class="upload camera" name="upload" id="upload"></input>
+            <input type="reset" class="delete thrash"></input>
             <p class="text">Up to 1 MB (300x300 px)</p>
             </div>
         </div>
