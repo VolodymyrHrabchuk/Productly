@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 13</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+  <main class="forms">
+    <div class="container">
+      <h1 class="title">Create an Account</h1>
+      <form action="" class="form">
+        <div class="form-content">
+        <div class="form-field">
+          <label class="form-label" for="first-name">First Name</label>
+          <input class="form-input" type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="last-name">Last Name</label>
+          <input class="form-input" type="text" id="last-name" name="last-name">
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="e-mail">E-mail</label>
+        <input class="form-input mail" type="text" id="e-mail" name="e-mail">
+        <p class="text">We'll never share your email with anyone else.</p>
+      </div>
+      <div class="form-content check">
+      <div class="checkbox-field">
+        <label class="form-label btn" for="male">
+          <input class="radio" type="radio" name="gender" id="male">
+          <span class="checkmark"></span>
+          Male
+        </label>
+      </div>
+      <div class="checkbox-field">
+        <label class="form-label btn" for="female">
+          <input class="radio" type="radio" name="gender" id="female">
+          <span class="checkmark"></span>
+          Female
+        </label>
+      </div>
+    </div>
+      <div class="form-content place">
+      <div class="form-field">
+        <label class="form-label" for="country">Country</label>
+        <select class="form-input select" name="country" id="country" placeholder="Select">
+          <option selected value=""></option>
+          <option value="ukraine">Ukraine</option>
+          <option value="usa">USA</option>
+          <option value="canada">Poland</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="city">City</label>
+        <input class="form-input" type="text" id="city" name="city">
+      </div>
+    </div>
+      <div class="button">
+        <input type="submit" value="Sign Up" class="sign-btn">
+      </div>
+      <p class="text center">By clicking the 'Sign Up' button, you confirm that you accept our
+       <a href="" class="link">Terms of Use</a> and <a href=""class="link">Privacy Policy</a>.</p>
+       <p class="login-text center">Have an account? <input type="submit" value="Log In" class="link"></p>
+      </form>
+    </div>
+    <div class="container">
+      <h2 class="title">Profile</h2>
+      <form action="" class="form">
+        <div class="form-photo">
+          <div class="form-pic">
+            <img src="/Lesson_13/img/Image.svg" alt="" class="avatar">
+            </div>
+            <div class="form-btn">
+            <input type="file" class="upload camera" name="upload" id="upload"></input>
+            <input type="reset" class="delete thrash"></input>
+            <p class="text">Up to 1 MB (300x300 px)</p>
+            </div>
+        </div>
+        <div class="form-content">
+        <div class="form-field">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" type="text" id="name" name="name">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="mail">E-mail</label>
+          <input class="form-input" type="text" id="mail" name="mail">
+        </div>
+      </div>
+        <div class="form-content">
+          <div class="form-field">
+            <label class="form-label" for="country">Country</label>
+            <select class="form-input select" name="country" id="country" placeholder="Select">
+              <option selected value=""></option>
+              <option value="ukraine">Ukraine</option>
+              <option value="usa">USA</option>
+              <option value="canada">Poland</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="city">City</label>
+            <input class="form-input" type="text" id="city" name="city">
+          </div>
+        </div>
+        <div class="form-content">
+          <div class="form-field">
+            <label class="form-label" for="zipcode">Zip Code</label>
+            <input class="form-input" type="zipcode" id="zipcode" name="zipcode">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="phone" id="phone" name="phone">
+          </div>
+      </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

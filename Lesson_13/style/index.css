@@ -1,0 +1,236 @@
+main {
+  font-family: 'Inter';
+}
+
+.forms {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.container {
+  max-width: 540px;
+  max-height: 590px;
+  padding: 0px 20px;
+}
+
+.form-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  border: 1px solid #E4E4E4;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.form-input.select {
+  background-image: url(/Lesson_13/img/sort.svg);
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 4%;
+  appearance: none;
+}
+
+.form-input:focus {
+  border: 1px solid #007BFF;
+}
+
+.form-label {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+
+.text {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+  margin: 7px 0px 0px;
+  max-width: 410px;
+}
+.mail {
+  width: 100%;
+}
+
+.check {
+  justify-content: normal;
+}
+
+.checkbox-field {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  position: relative;
+}
+
+.checkbox-field input {
+  display: none;
+}
+
+.checkbox-field .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E4E4E4;
+  border-radius: 15px;
+  margin-right: 8px;
+}
+
+.checkbox-field label {
+  display: flex;
+}
+
+.checkmark::before {
+  background-color: #007BFF;
+}
+.form-label .radio:checked ~ .checkmark {
+  background-color: #007BFF;
+}
+.checkbox-field .checkmark::before{
+  content: '';
+  background-color: white;
+  border-radius: 50px;
+  width: 11px;
+  height: 11px;
+  transform: translate(40%, 40%);
+  display: none;
+}
+
+.checkbox-field input:checked + .checkmark::before {
+  content: '';
+  display: block;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+.btn {
+  display: flex;
+}
+
+.place {
+  margin: 20px 0px 0px;
+}
+
+.sign-btn {
+  border: 1px solid #E4E4E4;
+  height: 38px;
+  width: 100%;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #545454;
+  background-color: white;
+  cursor: pointer;
+}
+
+.center {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.login-text {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  text-align: center;
+  border-top: solid 1px #E4E4E4;
+  padding-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #007BFF;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Inter';
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #1C1C1C;
+}
+
+.form-photo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.upload {
+  border: 1px solid #E4E4E4;
+  height: 38px;
+  width: 170px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #545454;
+  background-color: white;
+}
+
+.delete {
+  border: 1px solid #E4E4E4;
+  height: 38px;
+  width: 38px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #545454;
+  background-color: white;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.upload.camera {
+  background: url(/Lesson_13/img/camera.svg) no-repeat 90% center/ 24px;
+  font-size: 0;
+}
+
+.form-btn {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+.delete.thrash {
+  background: url(/Lesson_13/img/trash.svg) no-repeat 50% center /20px;
+  font-size: 0;
+  padding-bottom: 35px;
+}
